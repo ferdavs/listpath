@@ -1,0 +1,41 @@
+<idea-plugin>
+  <id>org.ferdavs</id>
+  <name>List Path </name>
+  <version>0.2</version>
+  <vendor email="fdavletov@gmail.com" url=""></vendor>
+
+  <description><![CDATA[
+     Show the list of the path items in the String and insert when enter pressed.
+     i.e show "/home" folder content.
+     press CTRL L + CTRL P
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="org.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="listndinsert" class="ListAndInsert" text="ListndInsert"
+            description="">
+      <add-to-group group-id="CodeCompletionGroup" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl L" second-keystroke="ctrl P"/>
+      <!---->
+    </action>
+  </actions>
+
+</idea-plugin>
