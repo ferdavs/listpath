@@ -230,4 +230,7 @@
   <component name="TypeScriptCompiler">
     <option name="nodeInterpreterTextField" value="C:/Program Files/nodejs/node" />
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
 </project>

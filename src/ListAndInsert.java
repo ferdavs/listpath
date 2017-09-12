@@ -55,7 +55,7 @@ public class ListAndInsert extends AnAction {
                                           10);
 
             listPopup.showInBestPositionFor(e.getDataContext());
-    
+
         } catch (Exception e1) {
             e1.printStackTrace();
         }
